@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "cy:test": "cypress run",
+    "cy:browser": "cypress open --e2e --browser chrome",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && yarn format",
     "lint:strict": "eslint --max-warnings=0 src"
@@ -27,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
     "autoprefixer": "^10.4.14",
+    "cypress": "^12.14.0",
     "eslint": "^8.42.0",
     "eslint-config-next": "^13.4.4",
     "eslint-config-prettier": "^8.8.0",
