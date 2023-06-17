@@ -7,6 +7,7 @@
 - [Directory Structure](#directory-structure)
 - [Install project](#install-project)
 - [Admin panel](#admin-panel)
+- [Tests](#tests)
 
 ## Technologies Used
 
@@ -53,3 +54,9 @@ To open admin panel u need to open `http://localhost:8000/app/login`.
 
 - Login: `admin@medusa-test.com`
 - Password: `supersecret`
+
+## Tests
+
+1. Run `yarn dev` to run dev server
+2. Go to frontend workspace by executing command `cd apps/frontend`.
+3. Run `yarn cy:test` to use tests.
