@@ -3,14 +3,8 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    'cypress/globals': true,
   },
-  plugins: [
-    '@typescript-eslint',
-    'simple-import-sort',
-    'unused-imports',
-    'cypress',
-  ],
+  plugins: ['@typescript-eslint', 'simple-import-sort', 'unused-imports'],
   extends: [
     'eslint:recommended',
     'next',
@@ -19,12 +13,6 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'cypress/no-assigning-return-values': 'error',
-    'cypress/no-unnecessary-waiting': 'error',
-    'cypress/assertion-before-screenshot': 'warn',
-    'cypress/no-force': 'warn',
-    'cypress/no-async-tests': 'error',
-    'cypress/no-pause': 'error',
     'no-unused-vars': 'off',
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
