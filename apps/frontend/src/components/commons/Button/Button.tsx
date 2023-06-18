@@ -1,6 +1,8 @@
-import { clsxm } from '@/lib/clsxm';
 import { VariantProps } from 'class-variance-authority';
 import { forwardRef } from 'react';
+
+import { clsxm } from '@/lib/clsxm';
+
 import { buttonVariants } from './ButtonModel';
 
 type ButtonProps = {
