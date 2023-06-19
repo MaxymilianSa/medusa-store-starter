@@ -1,0 +1,21 @@
+name: Build frontend app
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./apps/frontend
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: yarn
+      - name: Run lint
+        run: yarn lint:strict
