@@ -1,14 +1,7 @@
-import { Button } from '@/components/commons/Button/Button';
+const HomePage = () => (
+  <main className='flex items-center justify-center min-h-screen min-w-full'>
+    <h1>Medusa Store Starter</h1>
+  </main>
+);
 
-export default function Home() {
-  return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <div className='z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
-        <h1 className='text-lg'>Home page</h1>
-      </div>
-      <div>
-        <Button size='sm' />
-      </div>
-    </main>
-  );
-}
+export default HomePage;
