@@ -6,7 +6,7 @@ import { clsxm } from '@/lib/clsxm';
 import { buttonVariants } from './ButtonModel';
 
 type ButtonProps = {
-  isIcon?: any;
+  isIcon?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof buttonVariants>;
 
