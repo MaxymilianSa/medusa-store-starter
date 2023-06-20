@@ -12753,6 +12753,18 @@ new-date@^1.0.3:
   dependencies:
     "@segment/isodate" "1.0.3"
 
+next-translate-plugin@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/next-translate-plugin/-/next-translate-plugin-2.3.0.tgz#561e0c10736e4984dfd61f13b6ab97a2ec85d848"
+  integrity sha512-U4nWdWvYZuPDw/eBTXpg7i69pdbnQPcTa1WTJItIjB8VkkD/wET/Smy8OucU85Xlfk+rOZU1HVCOTSUrSMSYxQ==
+  dependencies:
+    typescript "4.5.2"
+
+next-translate@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-2.3.1.tgz#475799f28d51ec96e522743f478d3bac85328ecd"
+  integrity sha512-aD6ayxPStDP7xuwderNWY4JKFGfi5bIFY3eyvAoVIzFIqOHzt27afFjaRLjzbsjOW6xPVqnNx/H8puO/MuYZOw==
+
 next@13.4.4:
   version "13.4.4"
   resolved "https://registry.yarnpkg.com/next/-/next-13.4.4.tgz#d1027c8d77f4c51be0b39f671b4820db03c93e60"
@@ -16350,6 +16362,11 @@ typeorm@^0.3.16:
     tslib "^2.5.0"
     uuid "^9.0.0"
     yargs "^17.6.2"
+
+typescript@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 typescript@^4.5.2:
   version "4.9.5"
