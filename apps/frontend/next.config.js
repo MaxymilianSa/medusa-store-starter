@@ -1,14 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const nextTranslate = require('next-translate-plugin');
+const withNextIntl = require('next-intl/plugin')('./i18n.js');
 
 /** @type {import('next').NextConfig} */
-module.exports = nextTranslate({
+module.exports = withNextIntl({
   eslint: {
     dirs: ['src'],
   },
-
   reactStrictMode: true,
-
   webpack(config) {
     config.module.rules.push(
       {
