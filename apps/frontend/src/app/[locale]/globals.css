@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* #region  /**=========== Global colors =========== */
+  --color-white: 255 255 255; /* #ffffff */
+  --color-black: 0 0 0; /* #000000 */
+  --color-primary: 50 50 77; /* #32324D */
+  --color-main: 249 246 245; /* #F9F6F5*/
+  --color-secondary: 237 228 224; /* #EDE4E0 edit */
+  --color-pastel: 209 188 178; /* #D1BCB2 */
+  --color-accent: 219 165 20; /* #DBA514 */
+  --color-orange: 229 157 73; /* #E59D49 */
+  --color-green: 132 191 86; /* #84BF56 */
+  --color-dark-grey: 102 102 102; /* #666666 */
+  --color-middle-grey: 153 153 153; /* #999999 */
+  /* #endregion  /**======== Global colors =========== */
+}
+
+@layer base {
+  h1,
+  .h1 {
+    @apply font-primary text-xxl font-medium leading-xxxxl tracking-xl;
+  }
+
+  h2,
+  .h2 {
+    @apply font-primary text-xl font-medium leading-xxxl tracking-xl;
+  }
+
+  h3,
+  .h3 {
+    @apply font-primary text-lg font-medium leading-xl tracking-sm;
+  }
+
+  h4,
+  .h4 {
+    @apply font-primary text-base font-medium leading-md tracking-sm;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  body,
+  .p {
+    @apply font-primary text-md leading-lg tracking-normal;
+  }
+
+  .p2 {
+    @apply font-primary text-md leading-xxl tracking-normal;
+  }
+
+  .p3 {
+    @apply font-primary text-base leading-md tracking-normal;
+  }
+
+  .breadcrumbs {
+    @apply font-primary leading-sm font-medium tracking-normal;
+    font-size: 0.813rem;
+  }
+
+  .dropdown {
+    @apply font-primary text-base font-medium leading-md tracking-normal;
+  }
+
+  .caption {
+    @apply font-primary text-sm leading-sm tracking-normal;
+  }
+
+  .link-primary {
+    @apply font-primary text-base leading-base tracking-sm;
+    text-transform: uppercase;
+  }
+
+  .link-secondary {
+    @apply font-primary text-base leading-md tracking-normal;
+    text-transform: uppercase;
+  }
+
+  button,
+  .btn-default {
+    @apply font-primary text-md font-semibold leading-lg tracking-sm;
+  }
+
+  .btn-small {
+    @apply font-primary text-base leading-lg tracking-sm;
+  }
+
+  .btn-xs {
+    @apply font-primary text-base font-medium leading-base tracking-normal;
+  }
+
+  .btn-uppercase {
+    @apply font-primary text-base font-medium leading-sm tracking-xs;
+    text-transform: uppercase;
+  }
+
+  .price-xs {
+    @apply font-primary text-base font-medium leading-sm tracking-xs;
+  }
+
+  .price-lg {
+    @apply font-primary text-lg font-medium leading-xl tracking-sm;
+  }
+
+  [type='text']:focus,
+  [type='email']:focus,
+  [type='url']:focus,
+  [type='password']:focus,
+  [type='number']:focus,
+  [type='date']:focus,
+  [type='datetime-local']:focus,
+  [type='month']:focus,
+  [type='search']:focus,
+  [type='tel']:focus,
+  [type='time']:focus,
+  [type='week']:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: none;
+  }
+
+  input {
+    @apply font-primary text-base font-medium leading-sm tracking-normal;
+  }
+
+  label {
+    @apply font-primary text-xs font-semibold leading-xs tracking-xs;
+  }
+}
