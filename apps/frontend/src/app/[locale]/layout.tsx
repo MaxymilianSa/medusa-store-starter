@@ -2,7 +2,7 @@ import { Prompt } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { useLocale } from 'next-intl';
 
-import './globals.css';
+import '@/globals.css';
 
 const prompt = Prompt({
   weight: ['300', '400', '500', '600', '700'],
