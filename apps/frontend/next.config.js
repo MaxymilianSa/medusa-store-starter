@@ -7,6 +7,9 @@ module.exports = withNextIntl({
     dirs: ['src'],
   },
   reactStrictMode: true,
+  experimental: {
+    serverActions: true,
+  },
   webpack(config) {
     config.module.rules.push(
       {
