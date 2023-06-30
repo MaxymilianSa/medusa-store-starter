@@ -10,6 +10,7 @@
   --color-main: 249 246 245; /* #F9F6F5*/
   --color-secondary: 237 228 224; /* #EDE4E0 edit */
   --color-pastel: 209 188 178; /* #D1BCB2 */
+  --color-dark-pastel: 173 135 117; /* #AD8775 */
   --color-accent: 219 165 20; /* #DBA514 */
   --color-orange: 229 157 73; /* #E59D49 */
   --color-green: 132 191 86; /* #84BF56 */
@@ -57,7 +58,7 @@
   }
 
   .breadcrumbs {
-    @apply font-primary leading-sm font-medium tracking-normal;
+    @apply font-primary font-medium leading-sm tracking-normal;
     font-size: 0.813rem;
   }
 

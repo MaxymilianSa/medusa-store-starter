@@ -5,13 +5,13 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: 'bg-[#D1BCB2] text-white hover:bg-[#AD8775]',
-        secondary: 'bg-white text-[#D1BCB2]',
-        active: 'bg-white text-[#D1BCB2]',
-        disabled: 'bg-white text-[#AD8775]',
+        primary: 'bg-pastel text-white hover:bg-dark-pastel',
+        secondary: 'bg-white text-pastel',
+        active: 'bg-white text-pastel',
+        disabled: 'bg-white text-dark-pastel',
       },
       size: {
-        default: 'w-48',
+        default: 'w-auto',
         sm: 'w-36',
         md: 'w-48',
         lg: 'w-60',
