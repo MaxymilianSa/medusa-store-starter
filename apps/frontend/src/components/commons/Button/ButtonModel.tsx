@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority';
 
 export const buttonVariants = cva(
-  'px-7 py-4 uppercase text-white transition-all duration-75',
+  'flex gap-2.5 items-center justify-center px-7 py-4 uppercase text-white transition-all duration-75',
   {
     variants: {
       variant: {

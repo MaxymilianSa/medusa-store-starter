@@ -20,8 +20,9 @@ export default function Index() {
         <Icon name='twitter' />
       </div>
       <div>
-        <h1>{t('title')}</h1>
-        <Button iconName='ikonka'>Click me</Button>
+        <Button iconName='search' iconClassName='text-black'>
+          Click me
+        </Button>
       </div>
     </main>
   );
