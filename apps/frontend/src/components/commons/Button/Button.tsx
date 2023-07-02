@@ -16,8 +16,6 @@ type ButtonProps = {
 } & React.ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof buttonVariants>;
 
-// TODO: Configure Storybook customBg Control
-
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
