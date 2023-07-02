@@ -3,7 +3,7 @@ import { cva } from 'class-variance-authority';
 export type TagVariants = 'hot' | 'new' | 'popular' | null | undefined;
 
 export const tagVariants = cva(
-  'w-auto uppercase text-center leading-4 font-medium text-sm text-white px-4 py-1.5',
+  'max-w-xs w-auto uppercase text-center leading-4 font-medium text-sm text-white px-4 py-1.5',
   {
     variants: {
       variant: {

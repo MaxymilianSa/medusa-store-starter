@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Icon } from '@/components/commons/Icon/Icon';
-import Tag from '@/components/commons/Product/Tag/Tag';
+import { Tag } from '@/components/commons/Product/Tag/Tag';
 
 export default function Index() {
   const t = useTranslations('Index');
