@@ -44,3 +44,11 @@ export const Small: Story = {
     children: 'Button',
   },
 };
+
+export const Icon: Story = {
+  args: {
+    variant: 'primary',
+    children: 'Button',
+    iconName: 'burger-menu',
+  },
+};
