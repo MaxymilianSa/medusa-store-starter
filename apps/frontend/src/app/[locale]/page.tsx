@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/commons/Button/Button';
+import { FilterTag } from '@/components/commons/FilterTag/FilterTag';
 import { Icon } from '@/components/commons/Icon/Icon';
 
 export default function Index() {
@@ -24,6 +25,11 @@ export default function Index() {
           Click me
         </Button>
       </div>
+      <div>
+        <FilterTag label='Text' />
+        <FilterTag variant='active' label='Text' />
+      </div>
+      <FilterTag variant='selected' label='Color:' />
     </main>
   );
 }
