@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+import { BreadCrumbs } from '@/components/commons/breadcrumbs/BreadCrumbs';
 import { Button } from '@/components/commons/Button/Button';
 import { Icon } from '@/components/commons/Icon/Icon';
 
@@ -23,6 +24,23 @@ export default function Index() {
         <Button iconName='search' iconClassName='text-black'>
           Click me
         </Button>
+      </div>
+      <div>
+        <BreadCrumbs
+          links={[
+            {
+              label: 'Home',
+              href: '/',
+            },
+            {
+              label: 'Textile',
+              href: '/',
+            },
+            {
+              label: 'Armchair, fleece ',
+            },
+          ]}
+        />
       </div>
     </main>
   );
