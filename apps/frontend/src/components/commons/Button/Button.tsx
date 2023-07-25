@@ -18,33 +18,21 @@ type ButtonProps = {
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    {
-      size,
-      variant,
-      accent,
-      customBg,
-      className,
-      children,
-      iconClassName,
-      iconName,
-      ...props
-    },
+    { size, variant, className, children, iconClassName, iconName, ...props },
     ref
   ) => (
     <button
-      ref={ref}
-      className={clsxm(
-        buttonVariants({ size, variant, accent, customBg, className })
-      )}
-      {...props}
+      className={clsxm(buttonVariants({ size, variant, className }))}
+      {...{ ref, ...props }}
     >
       <>
         {children}
         {iconName ? (
-          <Icon name={iconName} className={clsxm('inline', iconClassName)} />
-        ) : (
-          ''
-        )}
+          <Icon
+            name={iconName}
+            className={clsxm('inline text-white', iconClassName)}
+          />
+        ) : null}
       </>
     </button>
   )

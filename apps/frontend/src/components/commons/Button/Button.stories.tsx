@@ -6,11 +6,7 @@ const meta: Meta<typeof Button> = {
   title: 'Commons/Button',
   component: Button,
   tags: ['autodocs'],
-  argTypes: {
-    customBg: {
-      control: 'color',
-    },
-  },
+  argTypes: {},
 };
 
 export default meta;
@@ -20,35 +16,27 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   args: {
     variant: 'primary',
-    children: 'Button',
+    children: 'Primary',
+  },
+};
+
+export const Active: Story = {
+  args: {
+    variant: 'active',
+    children: 'Active',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    variant: 'disabled',
+    children: 'Disabled',
   },
 };
 
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
-    children: 'Button',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: 'lg',
-    children: 'Button',
-  },
-};
-
-export const Small: Story = {
-  args: {
-    size: 'sm',
-    children: 'Button',
-  },
-};
-
-export const Icon: Story = {
-  args: {
-    variant: 'primary',
-    children: 'Button',
-    iconName: 'burger-menu',
+    children: 'Secondary',
   },
 };
