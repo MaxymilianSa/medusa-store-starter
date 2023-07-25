@@ -1,5 +1,14 @@
 {
   "Index": {
-    "title": "Witaj świecie!"
+    "title": "Witaj świecie!",
+    "tags": {
+      "status": {
+        "onTheWay": "W drodzę",
+        "cancelled": "Anulowane",
+        "done": "Zakończone",
+        "new": "Nowe zamówienie",
+        "color": "Color"
+      }
+    }
   }
 }

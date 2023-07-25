@@ -1,6 +1,6 @@
 import { Prompt } from 'next/font/google';
 import { notFound } from 'next/navigation';
-import { useLocale } from 'next-intl';
+import { NextIntlClientProvider, useLocale } from 'next-intl';
 
 import '@/globals.css';
 
@@ -23,16 +23,28 @@ type LocaleLayoutProps = {
   };
 };
 
-export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
+export default async function LocaleLayout({
+  children,
+  params,
+}: LocaleLayoutProps) {
+  let messages;
   const locale = useLocale();
 
   if (params.locale !== locale) {
     notFound();
   }
 
+  try {
+    messages = (await import(`../../../locales/${params.locale}.json`)).default;
+  } catch (error) {
+    notFound();
+  }
+
   return (
     <html lang={locale}>
-      <body className={prompt.variable}>{children}</body>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body className={prompt.variable}>{children}</body>
+      </NextIntlClientProvider>
     </html>
   );
 }

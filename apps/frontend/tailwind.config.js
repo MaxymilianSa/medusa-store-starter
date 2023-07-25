@@ -18,6 +18,7 @@ module.exports = {
       main: 'rgb(var(--color-main) / <alpha-value>)',
       secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
       pastel: 'rgb(var(--color-pastel) / <alpha-value>)',
+      hot: 'rgb(var(--color-hot) / <alpha-value>)',
       accent: 'rgb(var(--color-accent) / <alpha-value>)',
       orange: 'rgb(var(--color-orange) / <alpha-value>)',
       green: 'rgb(var(--color-green) / <alpha-value>)',
