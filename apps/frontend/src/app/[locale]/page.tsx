@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/commons/Button/Button';
+import { CircleButton } from '@/components/commons/CircleButton/CircleButton';
 import { Icon } from '@/components/commons/Icon/Icon';
 
 export default function Index() {
@@ -23,6 +24,12 @@ export default function Index() {
         <Button iconName='search' iconClassName='text-black'>
           Click me
         </Button>
+      </div>
+      <div>
+        <CircleButton iconName='arrow' />
+        <CircleButton iconName='burger-menu' />
+        <CircleButton>1</CircleButton>
+        <CircleButton iconName='cart' />
       </div>
     </main>
   );
