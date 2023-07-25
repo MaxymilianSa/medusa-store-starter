@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 
 import { Button } from '@/components/commons/Button/Button';
 import { Icon } from '@/components/commons/Icon/Icon';
+import TagsExample from '@/components/TagsExample';
 
 export default function Index() {
   const t = useTranslations('Index');
@@ -24,6 +25,7 @@ export default function Index() {
           Click me
         </Button>
       </div>
+      <TagsExample />
     </main>
   );
 }
