@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import { Button } from '@/components/commons/Button/Button';
+import ButtonExample from '@/components/ButtonExample';
 import { Icon } from '@/components/commons/Icon/Icon';
 
 export default function Index() {
@@ -19,11 +19,7 @@ export default function Index() {
         <Icon name='telegram' />
         <Icon name='twitter' />
       </div>
-      <div>
-        <Button iconName='search' iconClassName='text-black'>
-          Click me
-        </Button>
-      </div>
+      <ButtonExample />
     </main>
   );
 }

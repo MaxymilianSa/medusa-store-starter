@@ -1,35 +1,31 @@
 import { cva } from 'class-variance-authority';
 
 export const buttonVariants = cva(
-  'flex gap-2.5 items-center justify-center px-7 py-4 uppercase text-white transition-all duration-75',
+  'flex gap-2.5 items-center justify-center uppercase text-white transition-all duration-75',
   {
     variants: {
       variant: {
         primary: 'bg-pastel text-white hover:bg-dark-pastel',
-        secondary: 'bg-white text-pastel',
-        active: 'bg-white text-pastel',
-        disabled: 'bg-white text-dark-pastel',
+        secondary:
+          'bg-white text-dark-pastel border border-pastel hover:bg-pastel hover:text-white',
+        active: 'bg-dark-pastel text-white',
+        disabled: 'bg-pastel text-secondary cursor-not-allowed',
+        disabledSecondary:
+          'bg-white text-dark-pastel border border-pastel cursor-not-allowed',
       },
       size: {
-        default: 'w-auto',
-        sm: 'w-36',
-        md: 'w-48',
-        lg: 'w-60',
+        large: 'px-8 py-4',
+        small: 'px-8 py-3',
       },
-      accent: {
-        default: 'font-normal tracking-normal',
-        on: 'font-semibold tracking-widest',
-      },
-      customBg: {
-        default: '',
-        on: 'bg-red-400',
+      textVariant: {
+        large: 'font-semibold text-md leading-6 tracking-sm',
+        normal: 'font-normal text-md leading-6 tracking-sm',
       },
     },
     defaultVariants: {
-      size: 'default',
       variant: 'primary',
-      accent: 'default',
-      customBg: 'default',
+      textVariant: 'normal',
+      size: 'large',
     },
   }
 );
